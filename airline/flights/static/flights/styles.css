@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #0a0c0f;
+    background-color: black;   
     color: white;
 }
 
@@ -112,7 +112,7 @@ p{
 
 .button{
     background-color: #0d410e;
-    border-radius: 5px;
+    border-radius: 15px;
     color: #E5E7EB;
     font-size: 18px;
     font-weight: bold;
@@ -124,4 +124,22 @@ p{
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
+    border: none;
+    transition: all 200ms ease-in-out;
+}
+
+.button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.spotlight {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(144, 36, 172, 0.2) 20%, rgb(0, 0, 0) 80%);
+    border-radius: 50%;
+    pointer-events: none; 
+    mix-blend-mode: screen; 
+    transition: transform 0.05s linear;
 }
